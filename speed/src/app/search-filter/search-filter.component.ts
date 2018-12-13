@@ -1,10 +1,4 @@
-import { StatusesState } from './../reducers/status/status.reducer';
-import { Launch } from './../store/models/launch';
-import { Agency } from './../store/models/agency';
-import { Status } from './../store/models/status';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { ApiService } from '../store/api.service';
-import { GlobalSlideTypes, GlobalStore } from '../store/global-store.state';
 import { Store } from '@ngrx/store';
 import { State } from '../reducers';
 
@@ -54,7 +48,6 @@ export class SearchFilterComponent implements OnInit {
 
   onRadioButtonChange(entry) {
 
-    const that = this;
     switch (entry.key) {
       case 1:
         this.elementosCombo = this.statuses;

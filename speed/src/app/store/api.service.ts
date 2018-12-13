@@ -5,8 +5,6 @@ import { Observable, of } from 'rxjs';
 import { map, tap, catchError } from 'rxjs/operators';
 import { Status } from './models/status';
 import { Agency } from './models/agency';
-import { LoadLaunches, LoadStatuses, LoadTypes, LoadAgencies } from './global-store.actions';
-import { GlobalStore } from './global-store.state';
 import { Store } from '@ngrx/store';
 import { State } from '../reducers';
 

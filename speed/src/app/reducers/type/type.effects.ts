@@ -1,7 +1,6 @@
-import { LoadTypes } from './../../store/global-store.actions';
 import { Injectable } from '@angular/core';
 import { Actions, Effect } from '@ngrx/effects';
-import { TypeActionTypes, TypesLoaded } from './type.actions';
+import { TypeActionTypes, TypesLoaded, LoadTypes } from './type.actions';
 import { mergeMap, map } from 'rxjs/operators';
 import { ApiService } from 'src/app/store/api.service';
 

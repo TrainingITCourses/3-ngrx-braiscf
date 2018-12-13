@@ -5,7 +5,6 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../store/api.service';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { GlobalSlideTypes, GlobalStore } from '../store/global-store.state';
 import { Store } from '@ngrx/store';
 import { State } from '../reducers';
 import { LoadStatuses } from '../reducers/status/status.actions';
